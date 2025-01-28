@@ -215,7 +215,7 @@
 							]
 						},
 						{
-							"name": "ImageFromDstAndColorFile",
+							"name": "ImageFromColorFile",
 							"id": "406f9884-bcfd-4744-9026-f309a4d0a48e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
