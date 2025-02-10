@@ -371,6 +371,24 @@
 						}
 					],
 					"id": "27c37789-416c-4afd-b526-2bcb1f3dd81c"
+				},
+				{
+					"name": "WithThreadColorFIle",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "a1c7bafb-48fb-4d2e-8fd2-c73d4b6dfe5d",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "9f9e6d70-e489-4ba5-a77a-655d200a2eab"
 				}
 			],
 			"id": "838fa153-efeb-450c-9027-e84398ef5d39"
