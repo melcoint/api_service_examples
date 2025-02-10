@@ -262,8 +262,8 @@
 										"id": "77c5007e-5d41-4e49-a849-05c408270692",
 										"exec": [
 											"var loc = null;\r",
-											"pm.test(\"Image file can be previewed by saving the response to file in PNG format\", function () {\r",
-											"    console.log(\"Image file can be previewed by saving the response to file in PNG format\");\r",
+											"pm.test(\"Image file (PNG) can be previewed by saving the response to file\", function () {\r",
+											"    console.log(\"Image file (PNG) can be previewed by saving the response to file\");\r",
 											"   pm.response.to.have.header(\"Content-Length\");\r",
 											"   loc = pm.response.headers.get(\"Content-Length\");\r",
 											"   if (loc >> 500) {\r",
