@@ -464,7 +464,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ed7be56f-b0f4-4520-8b86-37418f4fdff7",
+				"id": "55f12190-5bf8-43e3-9108-04622686072d",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -476,14 +476,16 @@
 					"}\r",
 					"utils.getCollectionVar=function(pm,varName){\r",
 					"    return pm.collectionVariables.get(varName);    \r",
-					"}"
+					"}\r",
+					"\r",
+					""
 				]
 			}
 		},
 		{
 			"listen": "test",
 			"script": {
-				"id": "6eec2e23-7434-42c5-a720-e8a573b25b75",
+				"id": "fcf53a2f-92cc-45d1-9dfb-1741c94e9f33",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
