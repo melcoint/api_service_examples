@@ -508,6 +508,24 @@
 						}
 					],
 					"id": "27c37789-416c-4afd-b526-2bcb1f3dd81c"
+				},
+				{
+					"name": "WithHexValueFile",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "6bb38e99-b0bf-43c1-bcf1-15d9f9e437c4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "b4f58d0b-3bcf-4c88-8762-a8853a1bdd17"
 				}
 			],
 			"id": "838fa153-efeb-450c-9027-e84398ef5d39"
