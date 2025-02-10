@@ -71,7 +71,7 @@
 					"name": "WithThreadColorFIle",
 					"item": [
 						{
-							"name": "DownloadProductionFile",
+							"name": "ProductionFile",
 							"event": [
 								{
 									"listen": "test",
@@ -80,7 +80,7 @@
 										"exec": [
 											"var loc = null;\r",
 											"pm.test(\"Production file can be downloaded from response\", function () {\r",
-											"    console.log(\"Production file can be downloaded from response\");\r",
+											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
 											"   pm.response.to.have.header(\"Content-Length\");\r",
 											"   loc = pm.response.headers.get(\"Content-Length\");\r",
 											"   if (loc >> 500) {\r",
@@ -192,6 +192,69 @@
 						}
 					],
 					"id": "9f9e6d70-e489-4ba5-a77a-655d200a2eab"
+				},
+				{
+					"name": "WithHexColorFile",
+					"item": [
+						{
+							"name": "DowloadProductionFile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "d57ea5de-0daf-4c92-be57-2afe77d48f01",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Production file can be downloaded from response\", function () {\r",
+											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "6bb38e99-b0bf-43c1-bcf1-15d9f9e437c4",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "f61b2068-1196-452e-8d86-994ec1573871",
+											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+										},
+										{
+											"key": "color_file",
+											"type": "file",
+											"uuid": "7799baae-0054-49e2-8aef-f2c0b3a80c81",
+											"src": "postman-cloud:///1efe7ee4-33a9-4480-b8ea-4977892e53dc"
+										}
+									]
+								},
+								"url": "{{REST_ENDPOINT}}design-editor/colorize/download"
+							},
+							"response": []
+						}
+					],
+					"id": "b4f58d0b-3bcf-4c88-8762-a8853a1bdd17"
 				},
 				{
 					"name": "FileWorkflow",
@@ -508,24 +571,6 @@
 						}
 					],
 					"id": "27c37789-416c-4afd-b526-2bcb1f3dd81c"
-				},
-				{
-					"name": "WithHexValueFile",
-					"item": [
-						{
-							"name": "New Request",
-							"id": "6bb38e99-b0bf-43c1-bcf1-15d9f9e437c4",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "GET",
-								"header": []
-							},
-							"response": []
-						}
-					],
-					"id": "b4f58d0b-3bcf-4c88-8762-a8853a1bdd17"
 				}
 			],
 			"id": "838fa153-efeb-450c-9027-e84398ef5d39"
