@@ -61,6 +61,27 @@
 					"item": [
 						{
 							"name": "DownloadProductionFile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a65275c2-044c-4498-8fc9-da81698ecf1a",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Download production file response\", function () {\r",
+											"    console.log(\"Testing Download production file response\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "d16cc18f-4068-40a3-9bca-daad0d56f51d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
