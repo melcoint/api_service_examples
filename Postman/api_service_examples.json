@@ -16,8 +16,19 @@
 							"script": {
 								"id": "b9c9a6a4-224f-4c53-856a-553b198fec5a",
 								"exec": [
-									"var jsonData = JSON.parse(responseBody);\r",
-									"pm.collectionVariables.set(\"AUTHORIZATION\",'melco '+ jsonData[\"token\"]);"
+									"console.log(pm.environment.get('REST_ENDPOINT'));\r",
+									"console.log(pm.environment.get('API_KEY'));\r",
+									"console.log(pm.response.json());\r",
+									"\r",
+									"\r",
+									"pm.test(\"200Check\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"AUTHORIZATION\",'melco '+ jsonData[\"token\"]);\r",
+									"\r",
+									"\r",
+									""
 								],
 								"type": "text/javascript",
 								"packages": {}
@@ -68,8 +79,8 @@
 										"id": "a65275c2-044c-4498-8fc9-da81698ecf1a",
 										"exec": [
 											"var loc = null;\r",
-											"pm.test(\"Download production file response\", function () {\r",
-											"    console.log(\"Testing Download production file response\");\r",
+											"pm.test(\"Production file can be downloaded from response\", function () {\r",
+											"    console.log(\"Production file can be downloaded from response\");\r",
 											"   pm.response.to.have.header(\"Content-Length\");\r",
 											"   loc = pm.response.headers.get(\"Content-Length\");\r",
 											"   if (loc >> 500) {\r",
@@ -121,6 +132,27 @@
 						},
 						{
 							"name": "PreviewImageFile",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "ad2c4f8c-30ea-43de-ad3c-57390f6748d5",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Image file can be previewed by saving the response to file\", function () {\r",
+											"    console.log(\"Image file can be previewed by saving the response to file\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "fea0c359-d16b-4b29-9ef8-b35706a1a583",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
