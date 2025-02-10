@@ -376,14 +376,41 @@
 					"name": "WithThreadColorFIle",
 					"item": [
 						{
-							"name": "New Request",
-							"id": "a1c7bafb-48fb-4d2e-8fd2-c73d4b6dfe5d",
+							"name": "DownloadProductionFile",
+							"id": "d16cc18f-4068-40a3-9bca-daad0d56f51d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "271e530d-a7f8-48a5-80bc-c8e3c0cfd0f5",
+											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+										},
+										{
+											"key": "color_file",
+											"type": "file",
+											"uuid": "30ebae14-4c52-4be8-9597-914c3a052f6d",
+											"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026"
+										}
+									]
+								},
+								"url": "{{REST_ENDPOINT}}design-editor/colorize/download"
 							},
 							"response": []
 						}
