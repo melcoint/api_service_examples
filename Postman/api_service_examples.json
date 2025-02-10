@@ -376,6 +376,38 @@
 			"id": "838fa153-efeb-450c-9027-e84398ef5d39"
 		}
 	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ed7be56f-b0f4-4520-8b86-37418f4fdff7",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"//test change\r",
+					"utils={}\r",
+					"\r",
+					"utils.getEnvVar=function(pm,varName){\r",
+					"    return pm.environment.get(varName);    \r",
+					"}\r",
+					"utils.getCollectionVar=function(pm,varName){\r",
+					"    return pm.collectionVariables.get(varName);    \r",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "6eec2e23-7434-42c5-a720-e8a573b25b75",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
 	"variable": [
 		{
 			"key": "AUTHORIZATION",
