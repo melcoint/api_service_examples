@@ -189,6 +189,18 @@
 								"url": "{{REST_ENDPOINT}}design-editor/colorize/preview"
 							},
 							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "7a52d726-1358-40ae-8700-5935a7ce8562",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
 						}
 					],
 					"id": "9f9e6d70-e489-4ba5-a77a-655d200a2eab"
@@ -326,8 +338,42 @@
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=E0CCFF",
+									"host": [
+										"{{REST_ENDPOINT}}design-editor"
+									],
+									"path": [
+										"colorize",
+										"download"
+									],
+									"query": [
+										{
+											"key": "e.D0-G0-C0-S0.color",
+											"value": "E0CCFF",
+											"type": "text"
+										}
+									]
+								}
 							},
 							"response": []
 						}
