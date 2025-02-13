@@ -625,6 +625,72 @@
 								}
 							},
 							"response": []
+						},
+						{
+							"name": "OFMfileWithThreadColor",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9f0f6277-54c3-4c6c-bd4a-1f0ba27c7c2f",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "105a5fc8-1dcd-40d8-a5d9-c67e11ff602e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3300",
+									"host": [
+										"{{REST_ENDPOINT}}design-editor"
+									],
+									"path": [
+										"colorize",
+										"download"
+									],
+									"query": [
+										{
+											"key": "e.D0-G0-C0-S0.color",
+											"value": "FF3300"
+										}
+									]
+								}
+							},
+							"response": []
 						}
 					],
 					"id": "c97de4e2-bc21-494b-bf49-05c1b5b3f50e"
