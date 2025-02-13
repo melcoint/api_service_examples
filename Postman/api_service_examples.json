@@ -437,8 +437,29 @@
 					"name": "WithQueryString",
 					"item": [
 						{
-							"name": "OFMfileWithHexColor",
-							"id": "c6c733d4-3224-4f6e-8763-884cb4f92e19",
+							"name": "MetaData",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "564d8cd2-a3b1-4c0e-a27e-01134565a0a4",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Metadata can be seen by saving the response to file in JSON format\", function () {\r",
+											"    console.log(\"Metadata can be seen by saving the response to file in JSON format\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "95604ce3-9f51-4d48-a3d7-f3ff944afab2",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -457,32 +478,45 @@
 										{
 											"key": "design_file",
 											"type": "file",
-											"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+											"uuid": "681133e7-c8f4-4b77-afce-703815d83a67",
 											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+										},
+										{
+											"key": "color_file",
+											"type": "file",
+											"uuid": "8eff3118-b381-45fb-b1b2-e8f4a32f970a",
+											"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026",
+											"disabled": true
 										}
 									]
 								},
-								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3300",
-									"host": [
-										"{{REST_ENDPOINT}}design-editor"
-									],
-									"path": [
-										"colorize",
-										"download"
-									],
-									"query": [
-										{
-											"key": "e.D0-G0-C0-S0.color",
-											"value": "FF3300"
-										}
-									]
-								}
+								"url": "{{REST_ENDPOINT}}design-editor/colorize/metadata"
 							},
 							"response": []
 						},
 						{
 							"name": "OFMfileWithHexColorObject",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "b24d7e76-450a-430c-b2f8-d3aed6ac9bd5",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "dcc95c19-0ac0-4b22-9d73-05a585cacc85",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -520,6 +554,72 @@
 										{
 											"key": "e.D0-G0-C0-S0.color",
 											"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OFMfileWithHexColor",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "9f0f6277-54c3-4c6c-bd4a-1f0ba27c7c2f",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "c6c733d4-3224-4f6e-8763-884cb4f92e19",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3300",
+									"host": [
+										"{{REST_ENDPOINT}}design-editor"
+									],
+									"path": [
+										"colorize",
+										"download"
+									],
+									"query": [
+										{
+											"key": "e.D0-G0-C0-S0.color",
+											"value": "FF3300"
 										}
 									]
 								}
