@@ -508,7 +508,7 @@
 									]
 								},
 								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color= {\"id\": \"D0-G0-C0-S0\",  \"manufacturer\": \"Royal\", \"product_line\": \"Royal\",  \"name\": \"Plum\", \"code\": \"058\",  \"rgb\": \"CC00B4\"  }",
+									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
 									"host": [
 										"{{REST_ENDPOINT}}design-editor"
 									],
@@ -519,7 +519,7 @@
 									"query": [
 										{
 											"key": "e.D0-G0-C0-S0.color",
-											"value": " {\"id\": \"D0-G0-C0-S0\",  \"manufacturer\": \"Royal\", \"product_line\": \"Royal\",  \"name\": \"Plum\", \"code\": \"058\",  \"rgb\": \"CC00B4\"  }"
+											"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}"
 										}
 									]
 								}
