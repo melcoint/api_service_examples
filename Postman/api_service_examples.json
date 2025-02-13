@@ -674,7 +674,7 @@
 									]
 								},
 								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3300",
+									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.Thread=1259:Sulky:Sulky:salmon peach:%23F09982",
 									"host": [
 										"{{REST_ENDPOINT}}design-editor"
 									],
@@ -684,8 +684,8 @@
 									],
 									"query": [
 										{
-											"key": "e.D0-G0-C0-S0.color",
-											"value": "FF3300"
+											"key": "e.D0-G0-C0-S0.Thread",
+											"value": "1259:Sulky:Sulky:salmon peach:#F09982"
 										}
 									]
 								}
