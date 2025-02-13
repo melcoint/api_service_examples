@@ -437,8 +437,54 @@
 					"name": "WithQueryString",
 					"item": [
 						{
-							"name": "ProductionOFMfile",
+							"name": "OFMfileWithHexColor",
 							"id": "c6c733d4-3224-4f6e-8763-884cb4f92e19",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=E0CCFF",
+									"host": [
+										"{{REST_ENDPOINT}}design-editor"
+									],
+									"path": [
+										"colorize",
+										"download"
+									],
+									"query": [
+										{
+											"key": "e.D0-G0-C0-S0.color",
+											"value": "E0CCFF",
+											"type": "text"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "OFMfileWithHexColorObject",
+							"id": "dcc95c19-0ac0-4b22-9d73-05a585cacc85",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
