@@ -942,7 +942,7 @@
 							"name": "Group",
 							"item": [
 								{
-									"name": "MetaData",
+									"name": "MetaDataGroupColor",
 									"event": [
 										{
 											"listen": "test",
@@ -966,9 +966,9 @@
 													"{\r",
 													"    let element_id_name = 'ELEMENT_ID_' +i;\r",
 													"    console.log(element_id_name);\r",
-													"    let element_id = jsonData.element_list[i].id;\r",
+													"    let element_id = jsonData.element_list[i].color.id;\r",
 													"    console.log(element_id);\r",
-													"    pm.environment.set(element_id_name,'e.'+ element_id+'.thread');\r",
+													"    pm.environment.set(element_id_name,'e.'+ element_id+'.groupcolor');\r",
 													"    \r",
 													"}\r",
 													""
@@ -1021,6 +1021,237 @@
 											]
 										},
 										"url": "{{REST_ENDPOINT}}design-editor/colorize/metadata"
+									},
+									"response": []
+								},
+								{
+									"name": "OFMfileWithGroupColor",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "9f0f6277-54c3-4c6c-bd4a-1f0ba27c7c2f",
+												"exec": [
+													"var loc = null;\r",
+													"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+													"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+													"   pm.response.to.have.header(\"Content-Length\");\r",
+													"   loc = pm.response.headers.get(\"Content-Length\");\r",
+													"   if (loc >> 500) {\r",
+													"      return pass;\r",
+													"   }\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"id": "4c20633c-ff0d-470c-801b-03b8fc6526e1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{API_KEY}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "design_file",
+													"type": "file",
+													"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}=FF3399&{{ELEMENT_ID_1}}=BDBEFF",
+											"host": [
+												"{{REST_ENDPOINT}}design-editor"
+											],
+											"path": [
+												"colorize",
+												"download"
+											],
+											"query": [
+												{
+													"key": "e.D0-G0-C0-S0.color",
+													"value": "FF3300",
+													"disabled": true
+												},
+												{
+													"key": "{{ELEMENT_ID_0}}",
+													"value": "FF3399",
+													"type": "text"
+												},
+												{
+													"key": "{{ELEMENT_ID_1}}",
+													"value": "BDBEFF",
+													"type": "text"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "MetaDataGroupThread",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "564d8cd2-a3b1-4c0e-a27e-01134565a0a4",
+												"exec": [
+													"var loc = null;\r",
+													"pm.test(\"Metadata can be seen by saving the response to file in JSON format\", function () {\r",
+													"    console.log(\"Metadata can be seen by saving the response to file in JSON format\");\r",
+													"   pm.response.to.have.header(\"Content-Length\");\r",
+													"   loc = pm.response.headers.get(\"Content-Length\");\r",
+													"   if (loc >> 500) {\r",
+													"      return pass;\r",
+													"   }\r",
+													"});\r",
+													"var jsonData = pm.response.json();\r",
+													"console.log(jsonData.element_list);\r",
+													"console.log(jsonData.element_list.length);\r",
+													"let element_list_length = jsonData.element_list.length;\r",
+													"for(let i=0;i<element_list_length; i++)\r",
+													"{\r",
+													"    let element_id_name = 'ELEMENT_ID_' +i;\r",
+													"    console.log(element_id_name);\r",
+													"    let element_id = jsonData.element_list[i].id;\r",
+													"    console.log(element_id);\r",
+													"    pm.environment.set(element_id_name,'e.'+ element_id+'.groupthread');\r",
+													"    \r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"id": "8f0d248c-8026-4996-8c8e-54d5b42abbac",
+												"exec": [
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"id": "1c55a2fa-9cdc-47d7-9352-e7285496d76c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{API_KEY}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "design_file",
+													"type": "file",
+													"uuid": "681133e7-c8f4-4b77-afce-703815d83a67",
+													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+												},
+												{
+													"key": "color_file",
+													"type": "file",
+													"uuid": "8eff3118-b381-45fb-b1b2-e8f4a32f970a",
+													"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026",
+													"disabled": true
+												}
+											]
+										},
+										"url": "{{REST_ENDPOINT}}design-editor/colorize/metadata"
+									},
+									"response": []
+								},
+								{
+									"name": "OFMfileWithGroupThread",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "9f0f6277-54c3-4c6c-bd4a-1f0ba27c7c2f",
+												"exec": [
+													"var loc = null;\r",
+													"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+													"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+													"   pm.response.to.have.header(\"Content-Length\");\r",
+													"   loc = pm.response.headers.get(\"Content-Length\");\r",
+													"   if (loc >> 500) {\r",
+													"      return pass;\r",
+													"   }\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"id": "502c7e29-a740-41c8-b651-c3a58c96468f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{API_KEY}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "design_file",
+													"type": "file",
+													"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1&{{ELEMENT_ID_1}}=2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
+											"host": [
+												"{{REST_ENDPOINT}}design-editor"
+											],
+											"path": [
+												"colorize",
+												"download"
+											],
+											"query": [
+												{
+													"key": "{{ELEMENT_ID_0}}",
+													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1"
+												},
+												{
+													"key": "{{ELEMENT_ID_1}}",
+													"value": "2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"response": []
 								}
