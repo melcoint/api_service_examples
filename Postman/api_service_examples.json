@@ -1265,14 +1265,32 @@
 					"name": "UploadWorkFlow",
 					"item": [
 						{
-							"name": "New Request",
+							"name": "UploadDesign",
 							"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"method": "GET",
-								"header": []
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
+											"src": "postman-cloud:///1efeb1e3-7dd7-4020-a017-5ca3f30fa71e"
+										}
+									]
+								},
+								"url": "{{REST_ENDPOINT}}design-editor/upload"
 							},
 							"response": []
 						}
