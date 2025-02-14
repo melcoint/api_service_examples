@@ -912,7 +912,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.Thread=1259:Sulky:Sulky:salmon peach:%23F09982",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1&{{ELEMENT_ID_1}}=2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -922,8 +922,13 @@
 											],
 											"query": [
 												{
-													"key": "e.D0-G0-C0-S0.Thread",
-													"value": "1259:Sulky:Sulky:salmon peach:#F09982"
+													"key": "{{ELEMENT_ID_0}}",
+													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1"
+												},
+												{
+													"key": "{{ELEMENT_ID_1}}",
+													"value": "2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
+													"type": "text"
 												}
 											]
 										}
