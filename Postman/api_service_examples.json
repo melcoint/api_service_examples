@@ -1126,7 +1126,7 @@
 													"{\r",
 													"    let element_id_name = 'ELEMENT_ID_' +i;\r",
 													"    console.log(element_id_name);\r",
-													"    let element_id = jsonData.element_list[i].id;\r",
+													"    let element_id = jsonData.element_list[i].color.id;\r",
 													"    console.log(element_id);\r",
 													"    pm.environment.set(element_id_name,'e.'+ element_id+'.groupthread');\r",
 													"    \r",
