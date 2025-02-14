@@ -643,7 +643,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -653,7 +653,7 @@
 											],
 											"query": [
 												{
-													"key": "e.D0-G0-C0-S0.color",
+													"key": "{{ELEMENT_ID_0}}",
 													"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}"
 												}
 											]
@@ -781,6 +781,85 @@
 						{
 							"name": "ThreadColor",
 							"item": [
+								{
+									"name": "MetaData",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "564d8cd2-a3b1-4c0e-a27e-01134565a0a4",
+												"exec": [
+													"var loc = null;\r",
+													"pm.test(\"Metadata can be seen by saving the response to file in JSON format\", function () {\r",
+													"    console.log(\"Metadata can be seen by saving the response to file in JSON format\");\r",
+													"   pm.response.to.have.header(\"Content-Length\");\r",
+													"   loc = pm.response.headers.get(\"Content-Length\");\r",
+													"   if (loc >> 500) {\r",
+													"      return pass;\r",
+													"   }\r",
+													"});\r",
+													"var jsonData = pm.response.json();\r",
+													"console.log(jsonData.element_list);\r",
+													"console.log(jsonData.element_list.length);\r",
+													"let element_list_length = jsonData.element_list.length;\r",
+													"for(let i=0;i<element_list_length; i++)\r",
+													"{\r",
+													"    let element_id_name = 'ELEMENT_ID_' +i;\r",
+													"    console.log(element_id_name);\r",
+													"    let element_id = jsonData.element_list[i].id;\r",
+													"    console.log(element_id);\r",
+													"    pm.environment.set(element_id_name,'e.'+ element_id+'.color');\r",
+													"    \r",
+													"}\r",
+													""
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										},
+										{
+											"listen": "prerequest",
+											"script": {
+												"packages": {},
+												"type": "text/javascript"
+											}
+										}
+									],
+									"id": "a0883492-7542-4702-86ad-99dc1dc4244f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{API_KEY}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "design_file",
+													"type": "file",
+													"uuid": "681133e7-c8f4-4b77-afce-703815d83a67",
+													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+												},
+												{
+													"key": "color_file",
+													"type": "file",
+													"uuid": "8eff3118-b381-45fb-b1b2-e8f4a32f970a",
+													"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026",
+													"disabled": true
+												}
+											]
+										},
+										"url": "{{REST_ENDPOINT}}design-editor/colorize/metadata"
+									},
+									"response": []
+								},
 								{
 									"name": "OFMfileWithThreadColor",
 									"event": [
