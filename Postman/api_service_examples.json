@@ -437,6 +437,144 @@
 					"name": "WithQueryString",
 					"item": [
 						{
+							"name": "HexColor",
+							"item": [
+								{
+									"name": "OFMfileWithHexColor",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "9f0f6277-54c3-4c6c-bd4a-1f0ba27c7c2f",
+												"exec": [
+													"var loc = null;\r",
+													"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+													"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+													"   pm.response.to.have.header(\"Content-Length\");\r",
+													"   loc = pm.response.headers.get(\"Content-Length\");\r",
+													"   if (loc >> 500) {\r",
+													"      return pass;\r",
+													"   }\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"id": "c6c733d4-3224-4f6e-8763-884cb4f92e19",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{API_KEY}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "design_file",
+													"type": "file",
+													"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3300",
+											"host": [
+												"{{REST_ENDPOINT}}design-editor"
+											],
+											"path": [
+												"colorize",
+												"download"
+											],
+											"query": [
+												{
+													"key": "e.D0-G0-C0-S0.color",
+													"value": "FF3300"
+												}
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "OFMfileWithHexColorObject",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"id": "b24d7e76-450a-430c-b2f8-d3aed6ac9bd5",
+												"exec": [
+													"var loc = null;\r",
+													"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+													"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+													"   pm.response.to.have.header(\"Content-Length\");\r",
+													"   loc = pm.response.headers.get(\"Content-Length\");\r",
+													"   if (loc >> 500) {\r",
+													"      return pass;\r",
+													"   }\r",
+													"});"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"id": "dcc95c19-0ac0-4b22-9d73-05a585cacc85",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "x-api-key",
+												"value": "{{API_KEY}}",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "design_file",
+													"type": "file",
+													"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
+													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
+											"host": [
+												"{{REST_ENDPOINT}}design-editor"
+											],
+											"path": [
+												"colorize",
+												"download"
+											],
+											"query": [
+												{
+													"key": "e.D0-G0-C0-S0.color",
+													"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}"
+												}
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"id": "8a1abdd8-f8e9-44c6-a0d3-65766380a734"
+						},
+						{
 							"name": "MetaData",
 							"event": [
 								{
@@ -491,138 +629,6 @@
 									]
 								},
 								"url": "{{REST_ENDPOINT}}design-editor/colorize/metadata"
-							},
-							"response": []
-						},
-						{
-							"name": "OFMfileWithHexColorObject",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "b24d7e76-450a-430c-b2f8-d3aed6ac9bd5",
-										"exec": [
-											"var loc = null;\r",
-											"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
-											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
-											"   pm.response.to.have.header(\"Content-Length\");\r",
-											"   loc = pm.response.headers.get(\"Content-Length\");\r",
-											"   if (loc >> 500) {\r",
-											"      return pass;\r",
-											"   }\r",
-											"});"
-										],
-										"type": "text/javascript",
-										"packages": {}
-									}
-								}
-							],
-							"id": "dcc95c19-0ac0-4b22-9d73-05a585cacc85",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "x-api-key",
-										"value": "{{API_KEY}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "design_file",
-											"type": "file",
-											"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
-											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-										}
-									]
-								},
-								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
-									"host": [
-										"{{REST_ENDPOINT}}design-editor"
-									],
-									"path": [
-										"colorize",
-										"download"
-									],
-									"query": [
-										{
-											"key": "e.D0-G0-C0-S0.color",
-											"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}"
-										}
-									]
-								}
-							},
-							"response": []
-						},
-						{
-							"name": "OFMfileWithHexColor",
-							"event": [
-								{
-									"listen": "test",
-									"script": {
-										"id": "9f0f6277-54c3-4c6c-bd4a-1f0ba27c7c2f",
-										"exec": [
-											"var loc = null;\r",
-											"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
-											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
-											"   pm.response.to.have.header(\"Content-Length\");\r",
-											"   loc = pm.response.headers.get(\"Content-Length\");\r",
-											"   if (loc >> 500) {\r",
-											"      return pass;\r",
-											"   }\r",
-											"});"
-										],
-										"type": "text/javascript",
-										"packages": {}
-									}
-								}
-							],
-							"id": "c6c733d4-3224-4f6e-8763-884cb4f92e19",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "POST",
-								"header": [
-									{
-										"key": "x-api-key",
-										"value": "{{API_KEY}}",
-										"type": "text"
-									}
-								],
-								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "design_file",
-											"type": "file",
-											"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
-											"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-										}
-									]
-								},
-								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3300",
-									"host": [
-										"{{REST_ENDPOINT}}design-editor"
-									],
-									"path": [
-										"colorize",
-										"download"
-									],
-									"query": [
-										{
-											"key": "e.D0-G0-C0-S0.color",
-											"value": "FF3300"
-										}
-									]
-								}
 							},
 							"response": []
 						},
