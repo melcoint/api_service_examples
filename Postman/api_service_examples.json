@@ -822,16 +822,31 @@
 													"type": "file",
 													"uuid": "fbdb0360-7d06-4b12-b9ca-170c0670be0b",
 													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-												},
-												{
-													"key": "color_file",
-													"type": "file",
-													"uuid": "b50fc8c2-0791-4931-9c23-a5eaad4c6d08",
-													"src": "postman-cloud:///1efe7ee4-33a9-4480-b8ea-4977892e53dc"
 												}
 											]
 										},
-										"url": "{{REST_ENDPOINT}}design-editor/colorize/preview"
+										"url": {
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}=F5FFCC&{{ELEMENT_ID_1}}=6C3E7C",
+											"host": [
+												"{{REST_ENDPOINT}}design-editor"
+											],
+											"path": [
+												"colorize",
+												"preview"
+											],
+											"query": [
+												{
+													"key": "{{ELEMENT_ID_0}}",
+													"value": "F5FFCC",
+													"type": "text"
+												},
+												{
+													"key": "{{ELEMENT_ID_1}}",
+													"value": "6C3E7C",
+													"type": "text"
+												}
+											]
+										}
 									},
 									"response": [
 										{
@@ -1618,19 +1633,12 @@
 											],
 											"query": [
 												{
-													"key": "e.D0-G0-C0-S0.color",
-													"value": "FF3300",
-													"disabled": true
-												},
-												{
 													"key": "{{ELEMENT_ID_0}}",
-													"value": "FF3399",
-													"type": "text"
+													"value": "FF3399"
 												},
 												{
 													"key": "{{ELEMENT_ID_1}}",
-													"value": "BDBEFF",
-													"type": "text"
+													"value": "BDBEFF"
 												}
 											]
 										}
@@ -1688,7 +1696,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}=47D6C1",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -1699,8 +1707,7 @@
 											"query": [
 												{
 													"key": "{{ELEMENT_ID_0}}",
-													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
-													"type": "text"
+													"value": "47D6C1"
 												}
 											]
 										}
