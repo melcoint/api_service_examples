@@ -1004,7 +1004,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -1014,9 +1014,8 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
-													"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
-													"type": "text"
+													"key": "e.D0-G0-C0-S0.color",
+													"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}"
 												}
 											]
 										}
@@ -1272,7 +1271,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1&{{ELEMENT_ID_1}}=2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.thread=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1&e.D0-G0-C1-S1.thread=2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -1282,13 +1281,12 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
+													"key": "e.D0-G0-C0-S0.thread",
 													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1"
 												},
 												{
-													"key": "{{ELEMENT_ID_1}}",
-													"value": "2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
-													"type": "text"
+													"key": "e.D0-G0-C1-S1.thread",
+													"value": "2504:R-A:Super Strength Rayon:Cherrystone:AA004F"
 												}
 											]
 										}
@@ -1346,7 +1344,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.D0-G0-C0-S0.thread=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -1356,9 +1354,8 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
-													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
-													"type": "text"
+													"key": "e.D0-G0-C0-S0.thread",
+													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1"
 												}
 											]
 										}
@@ -1614,7 +1611,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}=FF3399&{{ELEMENT_ID_1}}=BDBEFF",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.C0.groupcolor=FF3399&e.C1.groupcolor=BDBEFF",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -1624,11 +1621,11 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
+													"key": "e.C0.groupcolor",
 													"value": "FF3399"
 												},
 												{
-													"key": "{{ELEMENT_ID_1}}",
+													"key": "e.C1.groupcolor",
 													"value": "BDBEFF"
 												}
 											]
@@ -1687,7 +1684,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}=47D6C1",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.C0.groupcolor=47D6C1",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -1697,7 +1694,7 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
+													"key": "e.C0.groupcolor",
 													"value": "47D6C1"
 												}
 											]
@@ -1948,7 +1945,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1&{{ELEMENT_ID_1}}=2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.C0.groupthread=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1&e.C1.groupthread=2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -1958,13 +1955,12 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
+													"key": "e.C0.groupthread",
 													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1"
 												},
 												{
-													"key": "{{ELEMENT_ID_1}}",
-													"value": "2504:R-A:Super Strength Rayon:Cherrystone:AA004F",
-													"type": "text"
+													"key": "e.C1.groupthread",
+													"value": "2504:R-A:Super Strength Rayon:Cherrystone:AA004F"
 												}
 											]
 										}
@@ -2022,7 +2018,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.C0.groupthread=2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -2032,9 +2028,8 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
-													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1",
-													"type": "text"
+													"key": "e.C0.groupthread",
+													"value": "2516:R-A:Super Strength Rayon:Aqua Pearl:47D6C1"
 												}
 											]
 										}
