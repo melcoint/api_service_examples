@@ -1262,6 +1262,24 @@
 					"id": "c97de4e2-bc21-494b-bf49-05c1b5b3f50e"
 				},
 				{
+					"name": "UploadWorkFlow",
+					"item": [
+						{
+							"name": "New Request",
+							"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
+							},
+							"response": []
+						}
+					],
+					"id": "c394f5b9-c37b-4643-a805-c25c7059b033"
+				},
+				{
 					"name": "FileWorkflow",
 					"item": [
 						{
@@ -1576,11 +1594,6 @@
 						}
 					],
 					"id": "27c37789-416c-4afd-b526-2bcb1f3dd81c"
-				},
-				{
-					"name": "New Folder",
-					"item": [],
-					"id": "c394f5b9-c37b-4643-a805-c25c7059b033"
 				}
 			],
 			"id": "838fa153-efeb-450c-9027-e84398ef5d39"
