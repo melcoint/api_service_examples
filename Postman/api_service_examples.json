@@ -566,7 +566,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}=FF3399&{{ELEMENT_ID_1}}=BDBEFF",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3399&e.D0-G0-C1-S1.color=BDBEFF",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -577,18 +577,11 @@
 											"query": [
 												{
 													"key": "e.D0-G0-C0-S0.color",
-													"value": "FF3300",
-													"disabled": true
+													"value": "FF3399"
 												},
 												{
-													"key": "{{ELEMENT_ID_0}}",
-													"value": "FF3399",
-													"type": "text"
-												},
-												{
-													"key": "{{ELEMENT_ID_1}}",
-													"value": "BDBEFF",
-													"type": "text"
+													"key": "e.D0-G0-C1-S1.color",
+													"value": "BDBEFF"
 												}
 											]
 										}
@@ -643,7 +636,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?{{ELEMENT_ID_0}}={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -653,7 +646,7 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
+													"key": "e.D0-G0-C0-S0.color",
 													"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Royal', ProductName: 'Royal',  Name: 'Plum', Code: '058', Color:{Argb:'CC00B4'}}"
 												}
 											]
@@ -826,7 +819,7 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?{{ELEMENT_ID_0}}=F5FFCC&{{ELEMENT_ID_1}}=6C3E7C",
+											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.D0-G0-C0-S0.color=F5FFCC&e.D0-G0-C1-S1.color=6C3E7C",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
@@ -836,14 +829,12 @@
 											],
 											"query": [
 												{
-													"key": "{{ELEMENT_ID_0}}",
-													"value": "F5FFCC",
-													"type": "text"
+													"key": "e.D0-G0-C0-S0.color",
+													"value": "F5FFCC"
 												},
 												{
-													"key": "{{ELEMENT_ID_1}}",
-													"value": "6C3E7C",
-													"type": "text"
+													"key": "e.D0-G0-C1-S1.color",
+													"value": "6C3E7C"
 												}
 											]
 										}
