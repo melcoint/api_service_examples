@@ -437,7 +437,7 @@
 					"name": "WithQueryString",
 					"item": [
 						{
-							"name": "MetaData",
+							"name": "HexColor",
 							"item": [
 								{
 									"name": "MetaData",
@@ -496,13 +496,7 @@
 										"url": "{{REST_ENDPOINT}}design-editor/colorize/metadata"
 									},
 									"response": []
-								}
-							],
-							"id": "963a6b31-4d78-4190-aaf7-fa598c1ff36a"
-						},
-						{
-							"name": "HexColor",
-							"item": [
+								},
 								{
 									"name": "OFMfileWithHexColor",
 									"event": [
