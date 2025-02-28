@@ -293,13 +293,13 @@
 													"key": "design_file",
 													"type": "file",
 													"uuid": "f61b2068-1196-452e-8d86-994ec1573871",
-													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+													"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 												},
 												{
 													"key": "color_file",
 													"type": "file",
 													"uuid": "7799baae-0054-49e2-8aef-f2c0b3a80c81",
-													"src": "postman-cloud:///1efe7ee4-33a9-4480-b8ea-4977892e53dc"
+													"src": "postman-cloud:///1eff5faa-26ff-44d0-a8ab-4d326118910d"
 												}
 											]
 										},
@@ -353,13 +353,13 @@
 													"key": "design_file",
 													"type": "file",
 													"uuid": "fbdb0360-7d06-4b12-b9ca-170c0670be0b",
-													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+													"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 												},
 												{
 													"key": "color_file",
 													"type": "file",
 													"uuid": "b50fc8c2-0791-4931-9c23-a5eaad4c6d08",
-													"src": "postman-cloud:///1efe7ee4-33a9-4480-b8ea-4977892e53dc"
+													"src": "postman-cloud:///1eff5faa-26ff-44d0-a8ab-4d326118910d"
 												}
 											]
 										},
