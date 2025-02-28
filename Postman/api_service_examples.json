@@ -549,12 +549,12 @@
 															"key": "design_file",
 															"type": "file",
 															"uuid": "4388c813-cbac-42c4-b2c1-cc66e831f185",
-															"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+															"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 														}
 													]
 												},
 												"url": {
-													"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=FF3399&e.D0-G0-C1-S1.color=BDBEFF",
+													"raw": "{{REST_ENDPOINT}}design-editor/colorize/download?e.D0-G0-C0-S0.color=912B31&e.D0-G0-C1-S1.color=E3E9FF&e.D0-G0-C2-S2.color=B2B9B4&e.D0-G0-C3-S3.color=912B31&e.D0-G0-C4-S4.color=555C5D&e.D0-G0-C5-S5.color=9B3320&e.D0-G0-C6-S6.color=FCF2C5&e.D0-G0-C7-S7.color=B2B9B4",
 													"host": [
 														"{{REST_ENDPOINT}}design-editor"
 													],
@@ -565,11 +565,41 @@
 													"query": [
 														{
 															"key": "e.D0-G0-C0-S0.color",
-															"value": "FF3399"
+															"value": "912B31"
 														},
 														{
 															"key": "e.D0-G0-C1-S1.color",
-															"value": "BDBEFF"
+															"value": "E3E9FF"
+														},
+														{
+															"key": "e.D0-G0-C2-S2.color",
+															"value": "B2B9B4",
+															"type": "text"
+														},
+														{
+															"key": "e.D0-G0-C3-S3.color",
+															"value": "912B31",
+															"type": "text"
+														},
+														{
+															"key": "e.D0-G0-C4-S4.color",
+															"value": "555C5D",
+															"type": "text"
+														},
+														{
+															"key": "e.D0-G0-C5-S5.color",
+															"value": "9B3320",
+															"type": "text"
+														},
+														{
+															"key": "e.D0-G0-C6-S6.color",
+															"value": "FCF2C5",
+															"type": "text"
+														},
+														{
+															"key": "e.D0-G0-C7-S7.color",
+															"value": "B2B9B4",
+															"type": "text"
 														}
 													]
 												}
