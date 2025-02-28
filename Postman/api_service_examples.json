@@ -1080,7 +1080,7 @@
 													]
 												},
 												"url": {
-													"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '058', Color:{Argb:'912B31'}}&e.D0-G0-C1-S1.color={Id: 'D0-G0-C1-S1',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Super White', Code: '058', Color:{Argb:'E3E9FF'}}&e.D0-G0-C2-S2.color={Id: 'D0-G0-C2-S2',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '058', Color:{Argb:'B2B9B4'}}&e.D0-G0-C3-S3.color={Id: 'D0-G0-C3-S3',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '058', Color:{Argb:'912B31'}}&e.D0-G0-C4-S4.color={Id: 'D0-G0-C4-S4',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Lead', Code: '058', Color:{Argb:'555C5D'}}&e.D0-G0-C5-S5.color={Id: 'D0-G0-C5-S5',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Terra Cotta', Code: '058', Color:{Argb:'9B3320'}}&e.D0-G0-C6-S6.color={Id: 'D0-G0-C6-S6',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Parchment', Code: '058', Color:{Argb:'FCF2C5'}}&e.D0-G0-C7-S7.color={Id: 'D0-G0-C7-S7',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '058', Color:{Argb:'B2B9B4'}}",
+													"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.D0-G0-C0-S0.color={Id: 'D0-G0-C0-S0',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '4215', Color:{Argb:'912B31'}}&e.D0-G0-C1-S1.color={Id: 'D0-G0-C1-S1',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Super White', Code: '1801', Color:{Argb:'E3E9FF'}}&e.D0-G0-C2-S2.color={Id: 'D0-G0-C2-S2',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '4210', Color:{Argb:'B2B9B4'}}&e.D0-G0-C3-S3.color={Id: 'D0-G0-C3-S3',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '4215', Color:{Argb:'912B31'}}&e.D0-G0-C4-S4.color={Id: 'D0-G0-C4-S4',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Lead', Code: '1640', Color:{Argb:'555C5D'}}&e.D0-G0-C5-S5.color={Id: 'D0-G0-C5-S5',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Terra Cotta', Code: '1821', Color:{Argb:'9B3320'}}&e.D0-G0-C6-S6.color={Id: 'D0-G0-C6-S6',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Parchment', Code: '1622', Color:{Argb:'FCF2C5'}}&e.D0-G0-C7-S7.color={Id: 'D0-G0-C7-S7',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '4210', Color:{Argb:'B2B9B4'}}",
 													"host": [
 														"{{REST_ENDPOINT}}design-editor"
 													],
@@ -1091,42 +1091,35 @@
 													"query": [
 														{
 															"key": "e.D0-G0-C0-S0.color",
-															"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '058', Color:{Argb:'912B31'}}"
+															"value": "{Id: 'D0-G0-C0-S0',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '4215', Color:{Argb:'912B31'}}"
 														},
 														{
 															"key": "e.D0-G0-C1-S1.color",
-															"value": "{Id: 'D0-G0-C1-S1',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Super White', Code: '058', Color:{Argb:'E3E9FF'}}",
-															"type": "text"
+															"value": "{Id: 'D0-G0-C1-S1',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Super White', Code: '1801', Color:{Argb:'E3E9FF'}}"
 														},
 														{
 															"key": "e.D0-G0-C2-S2.color",
-															"value": "{Id: 'D0-G0-C2-S2',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '058', Color:{Argb:'B2B9B4'}}",
-															"type": "text"
+															"value": "{Id: 'D0-G0-C2-S2',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '4210', Color:{Argb:'B2B9B4'}}"
 														},
 														{
 															"key": "e.D0-G0-C3-S3.color",
-															"value": "{Id: 'D0-G0-C3-S3',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '058', Color:{Argb:'912B31'}}",
-															"type": "text"
+															"value": "{Id: 'D0-G0-C3-S3',  SupplierName: 'Madeira', ProductName: 'CR Metallic',  Name: 'Ruby', Code: '4215', Color:{Argb:'912B31'}}"
 														},
 														{
 															"key": "e.D0-G0-C4-S4.color",
-															"value": "{Id: 'D0-G0-C4-S4',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Lead', Code: '058', Color:{Argb:'555C5D'}}",
-															"type": "text"
+															"value": "{Id: 'D0-G0-C4-S4',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Lead', Code: '1640', Color:{Argb:'555C5D'}}"
 														},
 														{
 															"key": "e.D0-G0-C5-S5.color",
-															"value": "{Id: 'D0-G0-C5-S5',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Terra Cotta', Code: '058', Color:{Argb:'9B3320'}}",
-															"type": "text"
+															"value": "{Id: 'D0-G0-C5-S5',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Terra Cotta', Code: '1821', Color:{Argb:'9B3320'}}"
 														},
 														{
 															"key": "e.D0-G0-C6-S6.color",
-															"value": "{Id: 'D0-G0-C6-S6',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Parchment', Code: '058', Color:{Argb:'FCF2C5'}}",
-															"type": "text"
+															"value": "{Id: 'D0-G0-C6-S6',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Parchment', Code: '1622', Color:{Argb:'FCF2C5'}}"
 														},
 														{
 															"key": "e.D0-G0-C7-S7.color",
-															"value": "{Id: 'D0-G0-C7-S7',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '058', Color:{Argb:'B2B9B4'}}",
-															"type": "text"
+															"value": "{Id: 'D0-G0-C7-S7',  SupplierName: 'Madeira', ProductName: 'Poly Neon',  Name: 'Chrome', Code: '4210', Color:{Argb:'B2B9B4'}}"
 														}
 													]
 												}
