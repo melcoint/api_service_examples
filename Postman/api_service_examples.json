@@ -413,13 +413,7 @@
 													"key": "design_file",
 													"type": "file",
 													"uuid": "3549293e-7f2f-4ce9-ae31-b5fbd96537a4",
-													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-												},
-												{
-													"key": "color_file",
-													"type": "file",
-													"uuid": "45d1597b-3058-42b9-82be-a7c9f4b02549",
-													"src": "postman-cloud:///1efe7ee4-33a9-4480-b8ea-4977892e53dc"
+													"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 												}
 											]
 										},
