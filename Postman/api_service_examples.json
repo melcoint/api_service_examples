@@ -2161,7 +2161,7 @@
 										"auth": {
 											"type": "noauth"
 										},
-										"method": "POST",
+										"method": "GET",
 										"header": [
 											{
 												"key": "x-api-key",
@@ -2181,53 +2181,46 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.C0.groupcolor=912B31&e.C1.groupcolor=E3E9FF&e.C2.groupcolor=B2B9B4&e.C3.groupcolor=912B31&e.C4.groupcolor=555C5D&e.C5.groupcolor=9B3320&e.C6.groupcolor=FCF2C5&e.C7.groupcolor=B2B9B4",
+											"raw": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}/preview?e.C0.groupcolor=6B3580&e.C1.groupcolor=D35791&e.C2.groupcolor=E3E9FF&e.C3.groupcolor=A276A9&e.C4.groupcolor=D35791&e.C5.groupcolor=E3E9FF&e.C6.groupcolor=6B3580&e.C7.groupcolor=D35791",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
 											"path": [
-												"colorize",
+												"{{DESIGN_ID}}",
 												"preview"
 											],
 											"query": [
 												{
 													"key": "e.C0.groupcolor",
-													"value": "912B31"
+													"value": "6B3580"
 												},
 												{
 													"key": "e.C1.groupcolor",
-													"value": "E3E9FF",
-													"type": "text"
+													"value": "D35791"
 												},
 												{
 													"key": "e.C2.groupcolor",
-													"value": "B2B9B4",
-													"type": "text"
+													"value": "E3E9FF"
 												},
 												{
 													"key": "e.C3.groupcolor",
-													"value": "912B31",
-													"type": "text"
+													"value": "A276A9"
 												},
 												{
 													"key": "e.C4.groupcolor",
-													"value": "555C5D",
-													"type": "text"
+													"value": "D35791"
 												},
 												{
 													"key": "e.C5.groupcolor",
-													"value": "9B3320",
-													"type": "text"
+													"value": "E3E9FF"
 												},
 												{
 													"key": "e.C6.groupcolor",
-													"value": "FCF2C5",
-													"type": "text"
+													"value": "6B3580"
 												},
 												{
 													"key": "e.C7.groupcolor",
-													"value": "B2B9B4",
-													"type": "text"
+													"value": "D35791"
 												}
 											]
 										}
@@ -2265,7 +2258,7 @@
 										"auth": {
 											"type": "noauth"
 										},
-										"method": "POST",
+										"method": "GET",
 										"header": [
 											{
 												"key": "x-api-key",
@@ -2285,53 +2278,46 @@
 											]
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.C0.groupthread=4215:Madeira:CR Metallic:Ruby:912B31&e.C1.groupthread=1801:Madeira:Poly Neon:Super White:E3E9FF&e.C2.groupthread=4210:Madeira:CR Metallic:Chrome:B2B9B4&e.C3.groupthread=4215:Madeira:CR Metallic:Ruby:912B31&e.C4.groupthread=1640:Madeira:Poly Neon:Lead:555C5D&e.C5.groupthread=1821:Madeira:Poly Neon:Terra Cotta:9B3320&e.C6.groupthread=1622:Madeira:Poly Neon:Parchment:FCF2C5&e.C7.groupthread=4210:Madeira:CR Metallic:Chrome:B2B9B4",
+											"raw": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}/preview?e.C0.groupthread=1880:Madeira:Poly Neon:Deep Lilac:6B3580&e.C1.groupthread=1990:Madeira:Poly Neon:Pink Rose:D35791&e.C2.groupthread=1801:Madeira:Poly Neon:Super White:E3E9FF&e.C3.groupthread=1712:Madeira:Poly Neon:Lilac:A276A9&e.C4.groupthread=1990:Madeira:Poly Neon:Pink Rose:D35791&e.C5.groupthread=1801:Madeira:Poly Neon:Super White:E3E9FF&e.C6.groupthread=1880:Madeira:Poly Neon:Deep Lilac:6B3580&e.C7.groupthread=1990:Madeira:Poly Neon:Pink Rose:D35791",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
 											"path": [
-												"colorize",
+												"{{DESIGN_ID}}",
 												"preview"
 											],
 											"query": [
 												{
 													"key": "e.C0.groupthread",
-													"value": "4215:Madeira:CR Metallic:Ruby:912B31"
+													"value": "1880:Madeira:Poly Neon:Deep Lilac:6B3580"
 												},
 												{
 													"key": "e.C1.groupthread",
-													"value": "1801:Madeira:Poly Neon:Super White:E3E9FF",
-													"type": "text"
+													"value": "1990:Madeira:Poly Neon:Pink Rose:D35791"
 												},
 												{
 													"key": "e.C2.groupthread",
-													"value": "4210:Madeira:CR Metallic:Chrome:B2B9B4",
-													"type": "text"
+													"value": "1801:Madeira:Poly Neon:Super White:E3E9FF"
 												},
 												{
 													"key": "e.C3.groupthread",
-													"value": "4215:Madeira:CR Metallic:Ruby:912B31",
-													"type": "text"
+													"value": "1712:Madeira:Poly Neon:Lilac:A276A9"
 												},
 												{
 													"key": "e.C4.groupthread",
-													"value": "1640:Madeira:Poly Neon:Lead:555C5D",
-													"type": "text"
+													"value": "1990:Madeira:Poly Neon:Pink Rose:D35791"
 												},
 												{
 													"key": "e.C5.groupthread",
-													"value": "1821:Madeira:Poly Neon:Terra Cotta:9B3320",
-													"type": "text"
+													"value": "1801:Madeira:Poly Neon:Super White:E3E9FF"
 												},
 												{
 													"key": "e.C6.groupthread",
-													"value": "1622:Madeira:Poly Neon:Parchment:FCF2C5",
-													"type": "text"
+													"value": "1880:Madeira:Poly Neon:Deep Lilac:6B3580"
 												},
 												{
 													"key": "e.C7.groupthread",
-													"value": "4210:Madeira:CR Metallic:Chrome:B2B9B4",
-													"type": "text"
+													"value": "1990:Madeira:Poly Neon:Pink Rose:D35791"
 												}
 											]
 										}
