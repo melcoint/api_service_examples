@@ -1276,7 +1276,7 @@
 											"response": []
 										},
 										{
-											"name": "OFMfileWithGroupColor",
+											"name": "DownloadOFMwithColor",
 											"event": [
 												{
 													"listen": "test",
@@ -1346,7 +1346,7 @@
 											"response": []
 										},
 										{
-											"name": "ImageFileWithGroupColor",
+											"name": "ImagePNG",
 											"event": [
 												{
 													"listen": "test",
