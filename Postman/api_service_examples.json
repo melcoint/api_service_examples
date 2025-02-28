@@ -1193,7 +1193,7 @@
 									"name": "Group",
 									"item": [
 										{
-											"name": "MetaDataGroupColor",
+											"name": "MetaData",
 											"event": [
 												{
 													"listen": "test",
@@ -1346,7 +1346,7 @@
 											"response": []
 										},
 										{
-											"name": "ImagePNG",
+											"name": "ImagePNGwithColor",
 											"event": [
 												{
 													"listen": "test",
@@ -1415,7 +1415,7 @@
 											"response": []
 										},
 										{
-											"name": "MetaDataGroupThread",
+											"name": "MetaData",
 											"event": [
 												{
 													"listen": "test",
@@ -1498,7 +1498,7 @@
 											"response": []
 										},
 										{
-											"name": "OFMfileWithGroupThread",
+											"name": "DownloadOFMwithThread",
 											"event": [
 												{
 													"listen": "test",
@@ -1568,7 +1568,7 @@
 											"response": []
 										},
 										{
-											"name": "ImageFileWithGroupThread",
+											"name": "ImagePNGWithThread",
 											"event": [
 												{
 													"listen": "test",
