@@ -125,7 +125,7 @@
 													"key": "color_file",
 													"type": "file",
 													"uuid": "30ebae14-4c52-4be8-9597-914c3a052f6d",
-													"src": "postman-cloud:///1eff5f37-cb83-4600-91a6-b1f8daa076af"
+													"src": "postman-cloud:///1eff5fa2-6cc3-4140-a0f7-5240871dc25a"
 												}
 											]
 										},
@@ -179,13 +179,13 @@
 													"key": "design_file",
 													"type": "file",
 													"uuid": "c0bcb4a6-2c25-4233-b2ed-478ce6a26636",
-													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+													"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 												},
 												{
 													"key": "color_file",
 													"type": "file",
 													"uuid": "f61cd742-c1f6-4192-83a5-25b571786f82",
-													"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026"
+													"src": "postman-cloud:///1eff5fa2-6cc3-4140-a0f7-5240871dc25a"
 												}
 											]
 										},
@@ -236,13 +236,7 @@
 													"key": "design_file",
 													"type": "file",
 													"uuid": "681133e7-c8f4-4b77-afce-703815d83a67",
-													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-												},
-												{
-													"key": "color_file",
-													"type": "file",
-													"uuid": "8eff3118-b381-45fb-b1b2-e8f4a32f970a",
-													"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026"
+													"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 												}
 											]
 										},
