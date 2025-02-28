@@ -1818,14 +1818,21 @@
 							"response": []
 						},
 						{
-							"name": "New Request",
-							"id": "6041fc3c-e8e9-4cd4-96cf-d2915d13ef1e",
+							"name": "GetMetadata",
+							"id": "07101303-ff06-40ab-bac3-3192d524b049",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
 								"method": "GET",
-								"header": []
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"url": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}"
 							},
 							"response": []
 						}
