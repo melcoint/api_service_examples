@@ -1766,7 +1766,7 @@
 					"name": "Upload",
 					"item": [
 						{
-							"name": "UploadDesign",
+							"name": "Design",
 							"event": [
 								{
 									"listen": "test",
@@ -1789,7 +1789,7 @@
 									}
 								}
 							],
-							"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
+							"id": "28640fb2-18e2-4dd8-b99a-1c11281f2036",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1819,7 +1819,7 @@
 						},
 						{
 							"name": "GetMetadata",
-							"id": "07101303-ff06-40ab-bac3-3192d524b049",
+							"id": "6c5f609f-bae3-4d3a-acac-299e7ad58346",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1837,69 +1837,11 @@
 							"response": []
 						}
 					],
-					"id": "4e43b3b8-ba71-4187-b600-7a8086b6969f"
+					"id": "17bf5a2d-ac59-4e65-8bc6-6252a17dca92"
 				},
 				{
 					"name": "Preview",
 					"item": [
-						{
-							"name": "Upload",
-							"item": [
-								{
-									"name": "Design",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"id": "815d2fbc-7577-4fe6-80f5-0eb9a019cf51",
-												"exec": [
-													"pm.test(\"200Check\", function () {\r",
-													"    pm.response.to.have.status(200);\r",
-													"});\r",
-													"console.log(pm.response.json());\r",
-													"var jsonData = pm.response.json();\r",
-													"console.log(jsonData[\"id\"]);\r",
-													"pm.environment.set(\"DESIGN_ID\",jsonData[\"id\"]);\r",
-													"\r",
-													"\r",
-													""
-												],
-												"type": "text/javascript",
-												"packages": {}
-											}
-										}
-									],
-									"id": "db92f741-f9f0-4a26-be4e-217f7c935d71",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "x-api-key",
-												"value": "{{API_KEY}}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "design_file",
-													"type": "file",
-													"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
-													"src": "postman-cloud:///1eff6188-536b-4de0-9961-28db86d9df52"
-												}
-											]
-										},
-										"url": "{{REST_ENDPOINT}}design-editor/upload"
-									},
-									"response": []
-								}
-							],
-							"id": "f029d245-7a18-4daa-a8f4-516b0657c253"
-						},
 						{
 							"name": "QueryString",
 							"item": [
@@ -2391,64 +2333,6 @@
 				{
 					"name": "DownloadOFM",
 					"item": [
-						{
-							"name": "Upload",
-							"item": [
-								{
-									"name": "Design",
-									"event": [
-										{
-											"listen": "test",
-											"script": {
-												"id": "815d2fbc-7577-4fe6-80f5-0eb9a019cf51",
-												"exec": [
-													"pm.test(\"200Check\", function () {\r",
-													"    pm.response.to.have.status(200);\r",
-													"});\r",
-													"console.log(pm.response.json());\r",
-													"var jsonData = pm.response.json();\r",
-													"console.log(jsonData[\"id\"]);\r",
-													"pm.environment.set(\"DESIGN_ID\",jsonData[\"id\"]);\r",
-													"\r",
-													"\r",
-													""
-												],
-												"type": "text/javascript",
-												"packages": {}
-											}
-										}
-									],
-									"id": "28640fb2-18e2-4dd8-b99a-1c11281f2036",
-									"protocolProfileBehavior": {
-										"disableBodyPruning": true
-									},
-									"request": {
-										"method": "POST",
-										"header": [
-											{
-												"key": "x-api-key",
-												"value": "{{API_KEY}}",
-												"type": "text"
-											}
-										],
-										"body": {
-											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "design_file",
-													"type": "file",
-													"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
-													"src": "postman-cloud:///1eff6188-536b-4de0-9961-28db86d9df52"
-												}
-											]
-										},
-										"url": "{{REST_ENDPOINT}}design-editor/upload"
-									},
-									"response": []
-								}
-							],
-							"id": "cd0b6a86-0d99-40db-9d89-5f83385d95da"
-						},
 						{
 							"name": "QueryString",
 							"item": [
