@@ -1767,6 +1767,28 @@
 					"item": [
 						{
 							"name": "UploadDesign",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "815d2fbc-7577-4fe6-80f5-0eb9a019cf51",
+										"exec": [
+											"pm.test(\"200Check\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"console.log(pm.response.json());\r",
+											"var jsonData = pm.response.json();\r",
+											"console.log(jsonData[\"id\"]);\r",
+											"pm.environment.set(\"DESIGN_ID\",jsonData[\"id\"]);\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
 							"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -1787,11 +1809,23 @@
 											"key": "design_file",
 											"type": "file",
 											"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
-											"src": "postman-cloud:///1efeb1e3-7dd7-4020-a017-5ca3f30fa71e"
+											"src": "postman-cloud:///1eff6188-536b-4de0-9961-28db86d9df52"
 										}
 									]
 								},
 								"url": "{{REST_ENDPOINT}}design-editor/upload"
+							},
+							"response": []
+						},
+						{
+							"name": "New Request",
+							"id": "6041fc3c-e8e9-4cd4-96cf-d2915d13ef1e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": []
 							},
 							"response": []
 						}
