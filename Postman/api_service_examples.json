@@ -1260,14 +1260,7 @@
 															"key": "design_file",
 															"type": "file",
 															"uuid": "681133e7-c8f4-4b77-afce-703815d83a67",
-															"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-														},
-														{
-															"key": "color_file",
-															"type": "file",
-															"uuid": "8eff3118-b381-45fb-b1b2-e8f4a32f970a",
-															"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026",
-															"disabled": true
+															"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 														}
 													]
 												},
@@ -1422,12 +1415,12 @@
 															"key": "design_file",
 															"type": "file",
 															"uuid": "fbdb0360-7d06-4b12-b9ca-170c0670be0b",
-															"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+															"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 														}
 													]
 												},
 												"url": {
-													"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.C0.groupcolor=47D6C1",
+													"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.C0.groupcolor=912B31&e.C1.groupcolor=E3E9FF&e.C2.groupcolor=B2B9B4&e.C3.groupcolor=912B31&e.C4.groupcolor=555C5D&e.C5.groupcolor=9B3320&e.C6.groupcolor=FCF2C5&e.C7.groupcolor=B2B9B4",
 													"host": [
 														"{{REST_ENDPOINT}}design-editor"
 													],
@@ -1438,7 +1431,42 @@
 													"query": [
 														{
 															"key": "e.C0.groupcolor",
-															"value": "47D6C1"
+															"value": "912B31"
+														},
+														{
+															"key": "e.C1.groupcolor",
+															"value": "E3E9FF",
+															"type": "text"
+														},
+														{
+															"key": "e.C2.groupcolor",
+															"value": "B2B9B4",
+															"type": "text"
+														},
+														{
+															"key": "e.C3.groupcolor",
+															"value": "912B31",
+															"type": "text"
+														},
+														{
+															"key": "e.C4.groupcolor",
+															"value": "555C5D",
+															"type": "text"
+														},
+														{
+															"key": "e.C5.groupcolor",
+															"value": "9B3320",
+															"type": "text"
+														},
+														{
+															"key": "e.C6.groupcolor",
+															"value": "FCF2C5",
+															"type": "text"
+														},
+														{
+															"key": "e.C7.groupcolor",
+															"value": "B2B9B4",
+															"type": "text"
 														}
 													]
 												}
@@ -1513,14 +1541,7 @@
 															"key": "design_file",
 															"type": "file",
 															"uuid": "681133e7-c8f4-4b77-afce-703815d83a67",
-															"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-														},
-														{
-															"key": "color_file",
-															"type": "file",
-															"uuid": "8eff3118-b381-45fb-b1b2-e8f4a32f970a",
-															"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026",
-															"disabled": true
+															"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 														}
 													]
 												},
