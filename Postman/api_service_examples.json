@@ -469,8 +469,12 @@
 												{
 													"listen": "prerequest",
 													"script": {
-														"packages": {},
-														"type": "text/javascript"
+														"id": "a3231cba-26c6-432e-aaee-0e97add1e88d",
+														"exec": [
+															""
+														],
+														"type": "text/javascript",
+														"packages": {}
 													}
 												}
 											],
@@ -494,14 +498,7 @@
 															"key": "design_file",
 															"type": "file",
 															"uuid": "681133e7-c8f4-4b77-afce-703815d83a67",
-															"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
-														},
-														{
-															"key": "color_file",
-															"type": "file",
-															"uuid": "8eff3118-b381-45fb-b1b2-e8f4a32f970a",
-															"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026",
-															"disabled": true
+															"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 														}
 													]
 												},
