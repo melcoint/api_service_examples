@@ -65,42 +65,6 @@
 			"id": "79dbfd2e-107c-4743-a67f-63b365ea35ba"
 		},
 		{
-			"name": "UploadWorkFlow",
-			"item": [
-				{
-					"name": "UploadDesign",
-					"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "{{API_KEY}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "design_file",
-									"type": "file",
-									"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
-									"src": "postman-cloud:///1efeb1e3-7dd7-4020-a017-5ca3f30fa71e"
-								}
-							]
-						},
-						"url": "{{REST_ENDPOINT}}design-editor/upload"
-					},
-					"response": []
-				}
-			],
-			"id": "45adea5f-45de-4d45-824b-00920d2d9934"
-		},
-		{
 			"name": "FileWorkflow",
 			"item": [
 				{
@@ -155,13 +119,13 @@
 													"key": "design_file",
 													"type": "file",
 													"uuid": "271e530d-a7f8-48a5-80bc-c8e3c0cfd0f5",
-													"src": "postman-cloud:///1efe7e54-af03-4d00-848e-7cbb4bfe0a3b"
+													"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
 												},
 												{
 													"key": "color_file",
 													"type": "file",
 													"uuid": "30ebae14-4c52-4be8-9597-914c3a052f6d",
-													"src": "postman-cloud:///1efe7e55-8335-41a0-9971-e02211f9e026"
+													"src": "postman-cloud:///1eff5f37-cb83-4600-91a6-b1f8daa076af"
 												}
 											]
 										},
@@ -2198,6 +2162,42 @@
 				}
 			],
 			"id": "c95e131e-a63b-4952-a575-4eaf42d71259"
+		},
+		{
+			"name": "UploadWorkFlow",
+			"item": [
+				{
+					"name": "UploadDesign",
+					"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{API_KEY}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "design_file",
+									"type": "file",
+									"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
+									"src": "postman-cloud:///1efeb1e3-7dd7-4020-a017-5ca3f30fa71e"
+								}
+							]
+						},
+						"url": "{{REST_ENDPOINT}}design-editor/upload"
+					},
+					"response": []
+				}
+			],
+			"id": "45adea5f-45de-4d45-824b-00920d2d9934"
 		}
 	],
 	"event": [
