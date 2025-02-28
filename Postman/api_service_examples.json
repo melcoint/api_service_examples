@@ -1763,34 +1763,50 @@
 			"name": "UploadWorkFlow",
 			"item": [
 				{
-					"name": "UploadDesign",
-					"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "{{API_KEY}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "design_file",
-									"type": "file",
-									"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
-									"src": "postman-cloud:///1efeb1e3-7dd7-4020-a017-5ca3f30fa71e"
-								}
-							]
-						},
-						"url": "{{REST_ENDPOINT}}design-editor/upload"
-					},
-					"response": []
+					"name": "Upload",
+					"item": [
+						{
+							"name": "UploadDesign",
+							"id": "82e745b0-a7bc-499f-b80e-20c551102ae7",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
+											"src": "postman-cloud:///1efeb1e3-7dd7-4020-a017-5ca3f30fa71e"
+										}
+									]
+								},
+								"url": "{{REST_ENDPOINT}}design-editor/upload"
+							},
+							"response": []
+						}
+					],
+					"id": "4e43b3b8-ba71-4187-b600-7a8086b6969f"
+				},
+				{
+					"name": "Preview",
+					"item": [],
+					"id": "8733707a-30a7-4395-8830-1bd7ca95300c"
+				},
+				{
+					"name": "DownloadOFM",
+					"item": [],
+					"id": "6f4296ea-105d-4181-be27-664495365444"
 				}
 			],
 			"id": "45adea5f-45de-4d45-824b-00920d2d9934"
