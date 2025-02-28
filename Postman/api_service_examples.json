@@ -1876,7 +1876,7 @@
 										"auth": {
 											"type": "noauth"
 										},
-										"method": "POST",
+										"method": "GET",
 										"header": [
 											{
 												"key": "x-api-key",
@@ -1886,61 +1886,56 @@
 										],
 										"body": {
 											"mode": "formdata",
-											"formdata": [
-												{
-													"key": "design_file",
-													"type": "file",
-													"uuid": "fbdb0360-7d06-4b12-b9ca-170c0670be0b",
-													"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
-												}
-											]
+											"formdata": []
 										},
 										"url": {
-											"raw": "{{REST_ENDPOINT}}design-editor/colorize/preview?e.D0-G0-C0-S0.color=912B31&e.D0-G0-C1-S1.color=E3E9FF&e.D0-G0-C2-S2.color=B2B9B4&e.D0-G0-C3-S3.color=912B31&e.D0-G0-C4-S4.color=555C5D&e.D0-G0-C5-S5.color=9B3320&e.D0-G0-C6-S6.color=FCF2C5&e.D0-G0-C7-S7.color=B2B9B4",
+											"raw": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}/preview?e.D0-G0-C0-S0.color=6B3580&e.D0-G0-C1-S1.color=D35791&e.D0-G0-C2-S2.color=E3E9FF&e.D0-G0-C3-S3.color=A276A9&e.D0-G0-C4-S4.color=D35791&e.D0-G0-C5-S5.color=E3E9FF&e.D0-G0-C6-S6.color=6B3580&e.D0-G0-C7-S7.color=D35791",
 											"host": [
 												"{{REST_ENDPOINT}}design-editor"
 											],
 											"path": [
-												"colorize",
+												"{{DESIGN_ID}}",
 												"preview"
 											],
 											"query": [
 												{
 													"key": "e.D0-G0-C0-S0.color",
-													"value": "912B31"
+													"value": "6B3580",
+													"type": "text"
 												},
 												{
 													"key": "e.D0-G0-C1-S1.color",
-													"value": "E3E9FF"
+													"value": "D35791",
+													"type": "text"
 												},
 												{
 													"key": "e.D0-G0-C2-S2.color",
-													"value": "B2B9B4",
+													"value": "E3E9FF",
 													"type": "text"
 												},
 												{
 													"key": "e.D0-G0-C3-S3.color",
-													"value": "912B31",
+													"value": "A276A9",
 													"type": "text"
 												},
 												{
 													"key": "e.D0-G0-C4-S4.color",
-													"value": "555C5D",
+													"value": "D35791",
 													"type": "text"
 												},
 												{
 													"key": "e.D0-G0-C5-S5.color",
-													"value": "9B3320",
+													"value": "E3E9FF",
 													"type": "text"
 												},
 												{
 													"key": "e.D0-G0-C6-S6.color",
-													"value": "FCF2C5",
+													"value": "6B3580",
 													"type": "text"
 												},
 												{
 													"key": "e.D0-G0-C7-S7.color",
-													"value": "B2B9B4",
+													"value": "D35791",
 													"type": "text"
 												}
 											]
