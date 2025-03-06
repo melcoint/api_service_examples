@@ -1,0 +1,8 @@
+4215,Madeira,CR Metallic,Ruby,#912B31
+1801,Madeira,Poly Neon,Super White,#E3E9FF
+4210,Madeira,CR Metallic,Chrome,#B2B9B4
+4215,Madeira,CR Metallic,Ruby,#912B31
+1640,Madeira,Poly Neon,Lead,#555C5D
+1821,Madeira,Poly Neon,Terra Cotta,#9B3320
+1622,Madeira,Poly Neon,Parchment,#FCF2C5
+4210,Madeira,CR Metallic,Chrome,#B2B9B4
