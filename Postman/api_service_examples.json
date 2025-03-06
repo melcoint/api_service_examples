@@ -1779,7 +1779,7 @@
 											"console.log(pm.response.json());\r",
 											"var jsonData = pm.response.json();\r",
 											"console.log(jsonData[\"id\"]);\r",
-											"pm.environment.set(\"DESIGN_ID\",jsonData[\"id\"]);\r",
+											"pm.collectionVariables.set(\"DESIGN_ID\",jsonData[\"id\"]);\r",
 											"\r",
 											"\r",
 											""
