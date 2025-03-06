@@ -2786,7 +2786,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "55f12190-5bf8-43e3-9108-04622686072d",
+				"id": "29242cb4-d700-48b9-836d-8409112dbcf5",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -2807,7 +2807,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fcf53a2f-92cc-45d1-9dfb-1741c94e9f33",
+				"id": "169ab5be-2d0c-4467-9b7b-b65d2e342f7e",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -2820,6 +2820,11 @@
 		{
 			"key": "AUTHORIZATION",
 			"value": ""
+		},
+		{
+			"key": "DESIGN_ID",
+			"value": "DES-1",
+			"type": "string"
 		}
 	]
 }
