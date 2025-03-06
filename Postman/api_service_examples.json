@@ -6,65 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Authorize",
-			"item": [
-				{
-					"name": "GetAuthorization",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "b9c9a6a4-224f-4c53-856a-553b198fec5a",
-								"exec": [
-									"console.log(pm.environment.get('REST_ENDPOINT'));\r",
-									"console.log(pm.environment.get('API_KEY'));\r",
-									"console.log(pm.response.json());\r",
-									"\r",
-									"\r",
-									"pm.test(\"200Check\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"var jsonData = pm.response.json();\r",
-									"pm.environment.set(\"AUTHORIZATION\",'melco '+ jsonData[\"token\"]);\r",
-									"\r",
-									"\r",
-									""
-								],
-								"type": "text/javascript",
-								"packages": {}
-							}
-						}
-					],
-					"id": "a83cae36-4794-4328-ae91-61dfb6d92d6f",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "x-api-key",
-								"value": "{{API_KEY}}",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n \"api_key\":\"{{API_KEY}}\",\r\n  \"device_info\": {\r\n    \"name\": \"Postman\"\r\n    }\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": "{{REST_ENDPOINT}}auth/apikey"
-					},
-					"response": []
-				}
-			],
-			"id": "79dbfd2e-107c-4743-a67f-63b365ea35ba"
-		},
-		{
 			"name": "FileWorkflow",
 			"item": [
 				{
