@@ -8,8 +8,8 @@ For each of the requests in this workflow, select the request and then follow th
        <li>Upload the design_file (Rock.dst or Surce.dst).</li>
        <li>Upload the color_file</li>
          <ul type="a">
-               <li>**RockColor.txt** or **SurceColor.txt** for the ThreadFile flow.</li>
-               <li> **RockHexColor.txt** or **SurceHexColor.txt** for the HexColorFile flow.</li>
+               <li><b>RockColor.txt</b> or <b>SurceColor.txt</b> for the ThreadFile flow.</li>
+               <li><b>RockHexColor.txt</b> or <b>SurceHexColor.txt</b> for the HexColorFile flow.</li>
          </ul>        
  </ol>
 
