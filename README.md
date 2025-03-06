@@ -1,5 +1,5 @@
 **steps to run the APIService examples collection**
-1. Download the environments and collections files.
+1. Download the environments,collections,design and color files.
 2. set the API_KEY variable value in environments file. (Apikey value is available in melco cloud account.Choose the Apikey of ApiService product.)
 
 **To run FileWorkFlow** <br />
