@@ -20,5 +20,5 @@ For each of the requests in this workflow, select the request and then follow th
        <li>Once the request is successful, you can run the requests in Preview or DownloadOFM workflows.</li>
  </ol>
 
-  **NOTE:** All the DST and TXT files are available in assets folder. Rock.dst is used for FileWorkFlow and Surce.dst is used for UploadWorkFlow.<br />
+  **NOTE:** All the DST and TXT files are available in assets folder. In the example collections, Rock.dst is used for FileWorkFlow and Surce.dst is used for UploadWorkFlow.<br />
    
