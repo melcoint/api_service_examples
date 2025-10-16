@@ -2783,12 +2783,12 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/DES-3/download?E.D0-G0-L0-S0.Text=Stargate High School&E.D0-G0-L0-S0.Color=00FF00&E.D0-G0-L1-S2.Text=Eagles",
+									"raw": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}/download?E.D0-G0-L0-S0.Text=Stargate High School&E.D0-G0-L0-S0.Color=000000&E.D0-G0-L1-S2.Text=Eagles",
 									"host": [
 										"{{REST_ENDPOINT}}design-editor"
 									],
 									"path": [
-										"DES-3",
+										"{{DESIGN_ID}}",
 										"download"
 									],
 									"query": [
@@ -2798,7 +2798,7 @@
 										},
 										{
 											"key": "E.D0-G0-L0-S0.Color",
-											"value": "00FF00"
+											"value": "000000"
 										},
 										{
 											"key": "E.D0-G0-L1-S2.Text",
