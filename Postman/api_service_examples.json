@@ -2718,6 +2718,72 @@
 						}
 					],
 					"id": "6f4296ea-105d-4181-be27-664495365444"
+				},
+				{
+					"name": "ChangeTextAttributes",
+					"item": [
+						{
+							"name": "DownloadOFM Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "a65275c2-044c-4498-8fc9-da81698ecf1a",
+										"exec": [
+											"var loc = null;\r",
+											"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
+											"    console.log(\"Production file (OFM) can be downloaded from response\");\r",
+											"   pm.response.to.have.header(\"Content-Length\");\r",
+											"   loc = pm.response.headers.get(\"Content-Length\");\r",
+											"   if (loc >> 500) {\r",
+											"      return pass;\r",
+											"   }\r",
+											"});"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "dffd58f3-920a-43e5-8474-8440ffa166ce",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "271e530d-a7f8-48a5-80bc-c8e3c0cfd0f5",
+											"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
+										},
+										{
+											"key": "color_file",
+											"type": "file",
+											"uuid": "30ebae14-4c52-4be8-9597-914c3a052f6d",
+											"src": "postman-cloud:///1eff5fa2-6cc3-4140-a0f7-5240871dc25a"
+										}
+									]
+								},
+								"url": "{{REST_ENDPOINT}}design-editor/colorize/download"
+							},
+							"response": []
+						}
+					],
+					"id": "a9e397f5-f255-4e2d-8b57-333f28906b0d"
 				}
 			],
 			"id": "45adea5f-45de-4d45-824b-00920d2d9934"
