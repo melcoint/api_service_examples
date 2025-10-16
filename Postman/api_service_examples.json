@@ -2723,6 +2723,58 @@
 					"name": "ChangeTextAttributes",
 					"item": [
 						{
+							"name": "Design Copy",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "815d2fbc-7577-4fe6-80f5-0eb9a019cf51",
+										"exec": [
+											"pm.test(\"200Check\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"console.log(pm.response.json());\r",
+											"var jsonData = pm.response.json();\r",
+											"console.log(jsonData[\"id\"]);\r",
+											"pm.collectionVariables.set(\"DESIGN_ID\",jsonData[\"id\"]);\r",
+											"\r",
+											"\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"id": "030c5ad2-4e1c-401e-b36a-413ba406d328",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "{{API_KEY}}",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "design_file",
+											"type": "file",
+											"uuid": "f4470f6a-e37c-4e76-8cf0-2a8ee44b2b37",
+											"src": "postman-cloud:///1eff6188-536b-4de0-9961-28db86d9df52"
+										}
+									]
+								},
+								"url": "{{REST_ENDPOINT}}design-editor/upload"
+							},
+							"response": []
+						},
+						{
 							"name": "ChangeText",
 							"event": [
 								{
@@ -2741,7 +2793,8 @@
 											"});"
 										],
 										"type": "text/javascript",
-										"packages": {}
+										"packages": {},
+										"requests": {}
 									}
 								}
 							],
@@ -2762,50 +2815,7 @@
 									"mode": "formdata",
 									"formdata": []
 								},
-								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}/download?e.D0-G0-C0-S0.color=6B3580&e.D0-G0-C1-S1.color=D35791&e.D0-G0-C2-S2.color=E3E9FF&e.D0-G0-C3-S3.color=A276A9&e.D0-G0-C4-S4.color=D35791&e.D0-G0-C5-S5.color=E3E9FF&e.D0-G0-C6-S6.color=6B3580&e.D0-G0-C7-S7.color=D35791",
-									"host": [
-										"{{REST_ENDPOINT}}design-editor"
-									],
-									"path": [
-										"{{DESIGN_ID}}",
-										"download"
-									],
-									"query": [
-										{
-											"key": "e.D0-G0-C0-S0.color",
-											"value": "6B3580"
-										},
-										{
-											"key": "e.D0-G0-C1-S1.color",
-											"value": "D35791"
-										},
-										{
-											"key": "e.D0-G0-C2-S2.color",
-											"value": "E3E9FF"
-										},
-										{
-											"key": "e.D0-G0-C3-S3.color",
-											"value": "A276A9"
-										},
-										{
-											"key": "e.D0-G0-C4-S4.color",
-											"value": "D35791"
-										},
-										{
-											"key": "e.D0-G0-C5-S5.color",
-											"value": "E3E9FF"
-										},
-										{
-											"key": "e.D0-G0-C6-S6.color",
-											"value": "6B3580"
-										},
-										{
-											"key": "e.D0-G0-C7-S7.color",
-											"value": "D35791"
-										}
-									]
-								}
+								"url": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}/download"
 							},
 							"response": []
 						}
