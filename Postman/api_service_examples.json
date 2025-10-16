@@ -2723,12 +2723,12 @@
 					"name": "ChangeTextAttributes",
 					"item": [
 						{
-							"name": "DownloadOFM Copy",
+							"name": "ChangeText",
 							"event": [
 								{
 									"listen": "test",
 									"script": {
-										"id": "a65275c2-044c-4498-8fc9-da81698ecf1a",
+										"id": "9f0f6277-54c3-4c6c-bd4a-1f0ba27c7c2f",
 										"exec": [
 											"var loc = null;\r",
 											"pm.test(\"Production file  (OFM) can be downloaded from response\", function () {\r",
@@ -2745,15 +2745,12 @@
 									}
 								}
 							],
-							"id": "dffd58f3-920a-43e5-8474-8440ffa166ce",
+							"id": "d44d122b-7bc8-40ff-b7e8-5c84b7c365d4",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
 							"request": {
-								"auth": {
-									"type": "noauth"
-								},
-								"method": "POST",
+								"method": "GET",
 								"header": [
 									{
 										"key": "x-api-key",
@@ -2763,27 +2760,58 @@
 								],
 								"body": {
 									"mode": "formdata",
-									"formdata": [
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{REST_ENDPOINT}}design-editor/{{DESIGN_ID}}/download?e.D0-G0-C0-S0.color=6B3580&e.D0-G0-C1-S1.color=D35791&e.D0-G0-C2-S2.color=E3E9FF&e.D0-G0-C3-S3.color=A276A9&e.D0-G0-C4-S4.color=D35791&e.D0-G0-C5-S5.color=E3E9FF&e.D0-G0-C6-S6.color=6B3580&e.D0-G0-C7-S7.color=D35791",
+									"host": [
+										"{{REST_ENDPOINT}}design-editor"
+									],
+									"path": [
+										"{{DESIGN_ID}}",
+										"download"
+									],
+									"query": [
 										{
-											"key": "design_file",
-											"type": "file",
-											"uuid": "271e530d-a7f8-48a5-80bc-c8e3c0cfd0f5",
-											"src": "postman-cloud:///1eff5f37-5ba5-4ae0-a561-9757c5d0ef4d"
+											"key": "e.D0-G0-C0-S0.color",
+											"value": "6B3580"
 										},
 										{
-											"key": "color_file",
-											"type": "file",
-											"uuid": "30ebae14-4c52-4be8-9597-914c3a052f6d",
-											"src": "postman-cloud:///1eff5fa2-6cc3-4140-a0f7-5240871dc25a"
+											"key": "e.D0-G0-C1-S1.color",
+											"value": "D35791"
+										},
+										{
+											"key": "e.D0-G0-C2-S2.color",
+											"value": "E3E9FF"
+										},
+										{
+											"key": "e.D0-G0-C3-S3.color",
+											"value": "A276A9"
+										},
+										{
+											"key": "e.D0-G0-C4-S4.color",
+											"value": "D35791"
+										},
+										{
+											"key": "e.D0-G0-C5-S5.color",
+											"value": "E3E9FF"
+										},
+										{
+											"key": "e.D0-G0-C6-S6.color",
+											"value": "6B3580"
+										},
+										{
+											"key": "e.D0-G0-C7-S7.color",
+											"value": "D35791"
 										}
 									]
-								},
-								"url": "{{REST_ENDPOINT}}design-editor/colorize/download"
+								}
 							},
 							"response": []
 						}
 					],
-					"id": "a9e397f5-f255-4e2d-8b57-333f28906b0d"
+					"id": "a9e397f5-f255-4e2d-8b57-333f28906b0d",
+					"description": "Change Text , Color or Alphabet/Font"
 				}
 			],
 			"id": "45adea5f-45de-4d45-824b-00920d2d9934"
