@@ -2783,7 +2783,7 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/DES-3/download?E.D0-G0-L0-S0.Text=Stargate&E.D0-G0-L0-S0.Color=",
+									"raw": "{{REST_ENDPOINT}}design-editor/DES-3/download?E.D0-G0-L0-S0.Text=Stargate High School&E.D0-G0-L0-S0.Color=00FF00&E.D0-G0-L1-S2.Text=Eagles",
 									"host": [
 										"{{REST_ENDPOINT}}design-editor"
 									],
@@ -2794,11 +2794,15 @@
 									"query": [
 										{
 											"key": "E.D0-G0-L0-S0.Text",
-											"value": "Stargate"
+											"value": "Stargate High School"
 										},
 										{
 											"key": "E.D0-G0-L0-S0.Color",
-											"value": ""
+											"value": "00FF00"
+										},
+										{
+											"key": "E.D0-G0-L1-S2.Text",
+											"value": "Eagles"
 										}
 									]
 								}
