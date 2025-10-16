@@ -2783,7 +2783,7 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{REST_ENDPOINT}}design-editor/DES-3/download?E.D0-G0-L0-S0.Text=Melco",
+									"raw": "{{REST_ENDPOINT}}design-editor/DES-3/download?E.D0-G0-L0-S0.Text=Stargate&E.D0-G0-L0-S0.Color=",
 									"host": [
 										"{{REST_ENDPOINT}}design-editor"
 									],
@@ -2794,7 +2794,11 @@
 									"query": [
 										{
 											"key": "E.D0-G0-L0-S0.Text",
-											"value": "Melco"
+											"value": "Stargate"
+										},
+										{
+											"key": "E.D0-G0-L0-S0.Color",
+											"value": ""
 										}
 									]
 								}
